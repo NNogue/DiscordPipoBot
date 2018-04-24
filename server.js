@@ -1,9 +1,5 @@
-const express = require('express');
-const path = require('path');
-const app = express();
-
-app.use(express.static(__dirname + '/dist/'));
-app.use('/src/assets', express.static(__dirname + '/src/assets/'));
-
-
-app.listen(process.env.PORT || 5000);
+var server_port = process.env.8080 || process.env.PORT || 80;
+var server_host = process.env.192 || '0.0.0.0';
+server.listen(server_port, server_host, function() {
+    console.log('Listening on port %d', server_port);
+});
